@@ -24,9 +24,10 @@ tools:
     lockdown: false
 
 safe-outputs:
-  create-discussions:
+  create-discussion:
     title-prefix: "[repo-status] "
     labels: [report, daily-status]
+    category: "ideas"
 ---
 
 # Daily Repo Status

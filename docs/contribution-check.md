@@ -20,15 +20,28 @@ You must also [choose a coding agent](https://github.github.com/gh-aw/reference/
 
 You can trigger this workflow manually via workflow_dispatch or let it run on its configured schedule.
 
+## How It Works
+
+````mermaid
+graph LR
+    A[Fetch Open PRs] --> B[Pre-filter Candidates]
+    B --> C[Check CONTRIBUTING.md]
+    C --> D{Compliant?}
+    D -->|Ready| E[Label: lgtm]
+    D -->|Needs Work| F[Add Feedback Comment]
+    D -->|Off Guidelines| G[Label: spam]
+    E --> H[Create Report Issue]
+    F --> H
+    G --> H
+````
+
 ## Configuration
 
 The workflow uses a pre-filtering step to intelligently select PRs for evaluation. You can customize:
 
+- **Target repository**: Set a `TARGET_REPOSITORY` repository variable to check PRs in a different repository than where the workflow runs. By default, it checks the repository where the workflow is installed.
 - **Schedule frequency**: Change `every 4 hours` to your preferred interval
-- **PR filter logic**: Modify the skip conditions in the `github-script` step (e.g., which labels indicate trusted contributors, what constitutes a "small" PR)
-- **Batch size**: Adjust the `TARGET` constant (default: 10 PRs per run)
 - **Report format**: Customize the report layout rules in the main workflow prompt
-- **Skip labels**: Update `SKIP_LABELS` and `SMALL_LABELS` sets to match your repository's labeling conventions
 
 The workflow requires a `CONTRIBUTING.md` file (or `.github/CONTRIBUTING.md` or `docs/CONTRIBUTING.md`) to evaluate PRs against. If no contribution guidelines exist, PRs will be marked with `no-guidelines` quality.
 

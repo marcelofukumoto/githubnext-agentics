@@ -7,20 +7,21 @@ A sample family of reusable [GitHub Agentic Workflows](https://github.github.com
 ### Triage Workflows
 
 - [🏷️ Issue Triage](docs/issue-triage.md) - Triage issues and pull requests
-- [🛡️ AI Moderator](docs/ai-moderator.md) - Automatically detect and moderate spam, link spam, and AI-generated content
 
-## Fault Analysis Workflows
+### Fault Analysis Workflows
 
 - [🏥 CI Doctor](docs/ci-doctor.md) - Monitor CI workflows and investigate failures automatically
+- [🚀 CI Coach](docs/ci-coach.md) - Optimize CI workflows for speed and cost efficiency
 
-## Code Review Workflows
+### Code Review Workflows
 
 - [✅ Contribution Guidelines Checker](docs/contribution-guidelines-checker.md) - Review pull requests for compliance with contribution guidelines
-- [🔍 Contribution Check](docs/contribution-check.md) - Regularly review batches of open PRs against contribution guidelines and create prioritized reports
+- [😤 Grumpy Reviewer](docs/grumpy-reviewer.md) - On-demand opinionated code review by a grumpy but thorough senior developer
 
 ### Research, Status & Planning Workflows
 
 - [📚 Weekly Research](docs/weekly-research.md) - Collect research updates and industry trends
+- [📊 Weekly Issue Summary](docs/weekly-issue-summary.md) - Weekly issue activity report with trend charts and recommendations
 - [👥 Daily Repo Status](docs/daily-repo-status.md) - Assess repository activity and create status reports
 - [👥 Daily Team Status](docs/daily-team-status.md) - Create upbeat daily team activity summaries with productivity insights
 - [📋 Daily Plan](docs/daily-plan.md) - Update planning issues for team coordination
@@ -51,12 +52,25 @@ You can use the "/plan" agent to turn the reports into actionable issues which c
 
 - [📖 Regular Documentation Update](docs/update-docs.md) - Update documentation automatically
 - [📖 Daily Documentation Updater](docs/daily-doc-updater.md) - Automatically update documentation based on recent code changes and merged PRs
+- [📖 Glossary Maintainer](docs/glossary-maintainer.md) - Automatically maintain project glossary based on codebase changes
 - [🔗 Link Checker](docs/link-checker.md) - Daily automated link checker that finds and fixes broken links in documentation
+- [🗜️ Documentation Unbloat](docs/unbloat-docs.md) - Automatically simplify documentation by reducing verbosity while maintaining clarity
 - [✨ Code Simplifier](docs/code-simplifier.md) - Automatically simplify recently modified code for improved clarity and maintainability
+- [🔍 Duplicate Code Detector](docs/duplicate-code-detector.md) - Identify duplicate code patterns and suggest refactoring opportunities
 - [⚡ Daily Progress](docs/daily-progress.md) - Automated daily feature development following a structured roadmap
 - [🧪 Daily Test Coverage Improver](docs/daily-test-improver.md) - Improve test coverage by adding meaningful tests to under-tested areas
 - [⚡ Daily Performance Improver](docs/daily-perf-improver.md) - Analyze and improve code performance through benchmarking and optimization
 - [🔥 Daily Backlog Burner](docs/daily-backlog-burner.md) - Systematically manage and reduce backlog through strategic cleanup
+
+## Security Workflows
+
+- [🔍 Daily Malicious Code Scan](docs/daily-malicious-code-scan.md) - Daily scan of recent code changes for suspicious patterns indicating malicious activity or supply chain attacks
+
+## Maintainer
+
+- [🛡️ AI Moderator](docs/ai-moderator.md) - Automatically detect and moderate spam, link spam, and AI-generated content
+- [🔍 Contribution Check](docs/contribution-check.md) - Regularly review batches of open PRs against contribution guidelines and create prioritized reports
+- [🤖 Repo Assist](docs/repo-assist.md) - Daily repository assistant that triages issues, fixes bugs, proposes improvements, and maintains activity summaries
 
 ## Meta-Workflows
 
